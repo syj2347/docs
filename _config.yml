@@ -1,12 +1,1 @@
 theme: jekyll-theme-cayman
-h2{color:rgb(200, 173, 230)}
-a:link{color:#000000;}      /* 未访问链接*/
-a:visited {color:#00fff2;}  /* 已访问链接 */
-a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
-a:active {color:#0000FF;}  /* 鼠标点击时 */
-table{background: url("background5.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;}
-thead{color:lightcyan}
-tbody{color:lightsteelblue}
