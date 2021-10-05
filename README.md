@@ -27,7 +27,7 @@
         上传头像<input type="file"><input type="submit" value="注册"><input type="reset">
     </form>
     <br/>
-    <table align="center" border=1 width=1000 height=200 cellpadding=7 >
+    <table align="center" border=1 width=1200 height=400 cellpadding=7 >
         <thead>
             <tr>
                 <th rowspan=3><a href="page2.html"><img src="photo.png" width=160 title="方俊唱歌真好听！" border=5></a></th>
