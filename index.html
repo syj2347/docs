@@ -113,63 +113,95 @@
     <20，所以我直接在输出数组前printf了一个1来解决这个<br />问题。（当然要先判断首位有没有超过10）<br/>
     <textarea rows=30 cols=85>
     //高精度加法
-    #include<stdio.h>
-        #include<string.h>
-            int main()
-            {
-            char a[241] = "";
-            char b[241] = "";
-            int c[241] = { 0 };//输出
-            scanf("%s", &a);
-            scanf("%s", &b);
-            int bn = strlen(b);
-            int an = strlen(a);
-            if (an >= bn)//判断谁位数多，就把相差的位数赋值给数组c
-            {
-            int flag = 0;//判断上一位相加有无进1
-            for (int i = 0; bn - 1 - i >= 0; i++)//从两数末位取到较小数的首位
-            {
-            if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)//无需进1
-            { 
-                c[an - 1 - i]=a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag; flag=0; } 
-            if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag>= 10)//需要进1
-            {
-                c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 +flag;
-                flag = 1;
-            }
-                }
-                for (int k = an - bn - 1; k >= 0; k--)//较大数的剩余的位数，同样需要判断是否需要进1
-                {
-                if (a[k] - '0' + flag < 10) { c[k]=a[k] - '0' + flag; flag=0; } if (a[k] - '0' + flag>= 10)
-                    {
-                    c[k] = a[k] - '0' + flag - 10;
-                    flag = 1;
-                    }
-                    }
-                    if (flag == 0)for (int k = 0; k < an; k++)printf("%d", c[k]); if (flag==1) {
-                        printf("1");//由于以较大数的位数作为数组c的项数，如果flag==1则代表最高位加和大于10， //需要增添一位,又由于9+9<20，首位只可能为1。 for (int k=0;
-                        k < an; k++)printf("%d", c[k]);//输出数组c，也就是两数和。 } } //下面与上面类似，仅仅两个数大小相反，部分区域把ab互换就可以了 if (an <
-                        bn) { int flag=0; for (int i=0; an - 1 - i>= 0; i++)
-                        {
-                        if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10) { c[bn - 1 - i]=a[an - 1 - i] + b[bn
-                            - 1 - i] - '0' - '0' + flag; flag=0; } if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag>
-                            = 10)
-                            {
-                            c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
-                            flag = 1;
-                            }
-                            }
-                            for (int k = bn - an - 1; k >= 0; k--)
-                            {
-                            if (b[k] - '0' + flag < 10) { c[k]=b[k] - '0' + flag; flag=0; } if (b[k] - '0' + flag>= 10)
-                                {
-                                c[k] = b[k] - '0' + flag - 10;
-                                flag = 1;
-                                }
-                                }
-                                if (flag == 0)for (int k = 0; k < bn; k++)printf("%d", c[k]); if (flag==1) {
-                                    printf("1"); for (int k=0; k < bn; k++)printf("%d", c[k]); } } return 0; } 
-                                </textarea>
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[241] = "";
+	char b[241] = "";
+	int c[241] = { 0 };//输出
+	scanf("%s", &a);
+	scanf("%s", &b);
+	int bn = strlen(b);
+	int an = strlen(a);
+	if (an >= bn)//判断谁位数多，就把相差的位数赋值给数组c
+	{
+		int flag = 0;//判断上一位相加有无进1
+		for (int i = 0; bn - 1 - i >= 0; i++)//从两数末位取到较小数的首位
+		{
+			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)//无需进1
+			{
+				c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
+				flag = 0;
+			}
+			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)//需要进1
+			{
+				c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
+				flag = 1;
+			}
+		}
+		for (int k = an - bn - 1; k >= 0; k--)//较大数的剩余的位数，同样需要判断是否需要进1
+		{
+			if (a[k] - '0' + flag < 10)
+			{
+				c[k] = a[k] - '0' + flag;
+				flag = 0;
+			}
+			if (a[k] - '0' + flag >= 10)
+			{
+				c[k] = a[k] - '0' + flag - 10;
+				flag = 1;
+			}
+		}
+		if (flag == 0)for (int k = 0; k < an; k++)printf("%d", c[k]);
+		if (flag == 1)
+		{
+			printf("1");//由于以较大数的位数作为数组c的项数，如果flag==1则代表最高位加和大于10，
+			//需要增添一位,又由于9+9<20，首位只可能为1。
+			for (int k = 0; k < an; k++)printf("%d", c[k]);//输出数组c，也就是两数和。
+		}
+	}
+	//下面与上面类似，仅仅两个数大小相反，部分区域把ab互换就可以了
+	if (an < bn)
+	{
+		int flag = 0;
+		for (int i = 0; an - 1 - i >= 0; i++)
+		{
+			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)
+			{
+				c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
+				flag = 0;
+			}
+			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)
+			{
+				c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
+				flag = 1;
+			}
+		}
+		for (int k = bn - an - 1; k >= 0; k--)
+		{
+			if (b[k] - '0' + flag < 10)
+			{
+				c[k] = b[k] - '0' + flag;
+				flag = 0;
+			}
+			if (b[k] - '0' + flag >= 10)
+			{
+				c[k] = b[k] - '0' + flag - 10;
+				flag = 1;
+			}
+		}
+		if (flag == 0)for (int k = 0; k < bn; k++)printf("%d", c[k]);
+		if (flag == 1)
+		{
+			printf("1");
+			for (int k = 0; k < bn; k++)printf("%d", c[k]);
+		}
+	}
+	return 0;
+}
+
+    </textarea>
     <h1 align="center">----------------------------------------------------------</h1>
 
         <h4>您喜欢的食物？</h4>
