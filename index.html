@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySpace</title>
     <style type="text/css">
+    a:hover{color:lightskyblue}
     </style>
 </head>
 
 <body>
-<a id="main"><h1 style="color:cornflowerblue" align="center"><span style="font-size: 32px; margin: 21px 0;">&lt;氼鏿&nbsp;的空间&gt;</span></h1></a>
+<a id="main"><h1 style="color:cornflowerblue;background-color:powderblue" align="center"><span style="font-size: 32px; margin: 21px 0;">&lt;氼鏿&nbsp;的空间&gt;</span></h1></a>
     <br />
     <form style="text-align:center;">
         你是谁？:<input type="text" value="请输入昵称"><br />
@@ -24,7 +25,7 @@
     <table align="center" border=1 >
         <thead>
             <tr>
-                <th rowspan=3><img src="https://unsplash.com/photos/FWoq_ldWlNQ"></th>
+                <th rowspan=3><h1 style="color:teal">基<br/>本<br/>内<br/>容</h1></th>
                 <th><a href="https://cn.bing.com/search?q=%E6%96%B9%E4%BF%8A&form=ANNTH1&refig=e650847e64b447f48cb0d2cad98a03fc"
                         target="_blank">
                         <h2>&lt;简&nbsp;介&gt;</h2>
@@ -70,25 +71,25 @@
         </thead>
     </table>   
     <br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <a id="title"><h1 style="text-align:center; color:sandybrown">&lt;目录&gt;</h1></a>
-    <dl>
-        <dt>C</dt>
+    <a id="title"><h1 style="text-align:center; color:orange;background-color: papayawhip;">&lt;目录&gt;</h1></a>
+    <dl style="background-color:snow">
+        <dt><h2 style="color:steelblue">&lt;C&gt;</h2></dt>
         <dd><a href="#3">C语言学习日记（1）：高精度算法</a></dd>
         <dd><a>C语言学习日记（2）：麦块问题</a></dd>
         <dd><a>C语言学习日记（3）：排序问题</a></dd>
         <dd><a>C语言学习日记（4）：快速幂</a></dd>
     </dl>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
     <a id="2">
-        <h1  style="color: peru" align="center"><span style="font-size: 32px; margin: 21px 0;">&lt;C语言&nbsp;学习日记&gt;</span></h1>
+        <h1  style="color: peru;background-color: papayawhip;" align="center"><span style="font-size: 32px; margin: 21px 0;">&lt;C&gt;</span></h1>
     </a>
     <a href="#main">
         <h3 style="text-align:center;">&lt;返回主页&gt;</h3>
     </a>
     <h1 align="center">----------------------------------------------------------</h1>
     <a id="3" href="#title"><h2 style="color: goldenrod;text-align:center;">C语言学习日记（1）：高精度加法</h2></a><br />
-    由于接触c语言不久（就十几天），所以代码写的可能会比较麻烦，希望各位大佬多多指正。<br /><br/>
+    <p style="background-color: snow;">由于接触c语言不久（就十几天），所以代码写的可能会比较麻烦，希望各位大佬多多指正。<br /><br/>
     题目是：计算a+b的值，a,b皆为不超过240位的正整数。<br /><br />
     我当时看到这道题后大致的思路是：<br /><br />
     （1）：位数很多，所以需要用数组或者字符串。<br /><br />
@@ -99,6 +100,7 @@
     小问题：<br/><br />
     （1）：开始时，以为较大的数相比较小数多出的位数，可以直接赋值给输出的数组，但实际上也是有可能从后不断加和进一的，所以也需要判断是否需要进1.<br /><br />
     （2）我由于把较大数的位数当作输出数组（结果）的元素数目，所以当加和后，首位加和超过10，那么输出的位数也要加1。由于9+9<20，所以我直接在输出数组前printf了一个1来解决这个问题。（当然要先判断首位有没有超过10）<br/><br />
+    </p>
     <textarea rows=30 cols=75>
     //高精度加法
 #include<stdio.h>
@@ -199,20 +201,21 @@ return 0;
     </textarea>
     <h1 align="center">----------------------------------------------------------</h1>
 
-        <h4>您喜欢的食物？</h4>
+        <h4>您还想看什么板块？</h4>
         <ul>
-            <li>广州菜</li>
-            <li>苏州菜</li>
-            <li>甜品</li>
+            <li>书籍推荐</li>
+            <li>软件安装与调试</li>
+            <li>pdf等学习资源</li>
             <li></li>
             <li></li>
             <li></li>
         </ul>
         <dl>
-            <dt>关注我们</dt>
-            <dd>新浪微博</dd>
-            <dd>官方微信</dd>
-            <dd>官方QQ</dd>
+            <dt><h4>关注我</h4></dt>
+            <dd><a href="https://space.bilibili.com/418288338/?spm_id_from=333.999.0.0" targrt="_blank">关注我的bilibili</a></dd>
+            <dd>CSDN</dd>
+            <dd>微信公众号</dd>
+            <dd>头条号</dd>
             <dd>联系我们</dd>
         </dl>
 </body>
