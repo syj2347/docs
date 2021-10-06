@@ -11,11 +11,11 @@
     </style>
 </head>
 
-<body style="text-align:center;">
-    <h1 style="color:cornflowerblue" align="center"><span
+<body>
+    <h1 style="color:cornflowerblue;background-color:palegoldenrod" align="center"><span
             style="font-size: 32px; margin: 21px 0;">&lt;氼鏿&nbsp;的空间&gt;</span></h1>
     <br />
-    <form>
+    <form style="text-align:center;">
         你是谁？:<input type="text" value="请输入昵称"><br />
         密码？：<input type="password"><br />
         性别？：男<input type="radio" name="sex">女<input type="radio" name="sex"><br />
@@ -70,137 +70,132 @@
                     </a>
             </tr>
         </thead>
-    </table>
-    <br />
+    </table>   
     <br /><br /><br />
-    <br /><br /><br /><br /><br />
-    <table align="center" border=1 width=700 height=100 cellpadding=10>
-        <thead>
-            <tr>
-                <th>性别</th>
-                <th>年龄</th>
-                <th>爱好</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>男</td>
-                <td>18</td>
-                <td>乒乓球</td>
-            </tr>
-        </tbody>
-    </table>
-    <br />
-    <br />
+<h1 style="text-align:center; color:sandybrown">目录</h1>
+    <dl>
+        <dt>C</dt>
+        <dd><a href="#2">C语言学习日记（1）：高精度算法</a></dd>
+        <dd><a>C语言学习日记（2）：麦块问题</a></dd>
+        <dd><a>C语言学习日记（3）：排序问题</a></dd>
+        <dd><a>C语言学习日记（4）：快速幂</a></dd>
+    </dl>
     <a id="2">
         <h1  style="color: peru" align="center"><span style="font-size: 32px; margin: 21px 0;">&lt;C语言&nbsp;学习日记&gt;</span></h1>
     </a>
     <a href="#1">
-        <h3>&lt;返回主页&gt;</h3>
+        <h3 style="text-align:center;">&lt;返回主页&gt;</h3>
     </a>
     <h1 align="center">----------------------------------------------------------</h1>
-    <h2 style="color: goldenrod;">C语言学习日记（1）：高精度加法</h2><br />
-    由于接触c语言不久（就十几天），所以代码写的可能会比较麻烦，希望各位大佬多多指正。<br />
-    题目是：计算a+b的值，a,b皆为不超过240位的正整数。<br />
-    我当时看到这道题后大致的思路是：<br />
-    （1）：位数很多，所以需要用数组或者字符串。<br />
-    （2）：加法的话，就是超过十给前一位加一嘛。<br />
-    （3）：字符串加和就靠-'0'<br />
+    <h2 style="color: goldenrod;text-align:center;">C语言学习日记（1）：高精度加法</h2><br />
+    由于接触c语言不久（就十几天），所以代码写的可能会比较麻烦，希望各位大佬多多指正。<br /><br/>
+    题目是：计算a+b的值，a,b皆为不超过240位的正整数。<br /><br />
+    我当时看到这道题后大致的思路是：<br /><br />
+    （1）：位数很多，所以需要用数组或者字符串。<br /><br />
+    （2）：加法的话，就是超过十给前一位加一嘛。<br /><br />
+    （3）：字符串加和就靠-'0'<br /><br />
     随后想到两个数位数不同时，相同下标的数组元素是不匹配的，想过补零，但感觉比较麻烦，便通过strlen函数表示出相应的需要相加的元素下标。<br />
     于是，也就大致写出来的，但也有一部分测试是不正确的，因为一些方面没有考虑清楚，如下所示：<br />
-    小问题：（1）：开始时，以为较大的数相比较小数多出的位数，可以直接赋值给输出的数组，但实际上也是有可能从后不断加和进一的，所以也需要判断是否需要进1.<br />
-    （2）我由于把较大数的位数当作输出数组（结果）的元素数目，所以当加和后，首位加和超过10，那么输出的位数也要加1。由于9+9
-    <20，所以我直接在输出数组前printf了一个1来解决这个<br />问题。（当然要先判断首位有没有超过10）<br/>
-    <textarea rows=30 cols=85>
+    小问题：<br/><br />
+    （1）：开始时，以为较大的数相比较小数多出的位数，可以直接赋值给输出的数组，但实际上也是有可能从后不断加和进一的，所以也需要判断是否需要进1.<br /><br />
+    （2）我由于把较大数的位数当作输出数组（结果）的元素数目，所以当加和后，首位加和超过10，那么输出的位数也要加1。由于9+9<20，所以我直接在输出数组前printf了一个1来解决这个问题。（当然要先判断首位有没有超过10）<br/><br />
+    <textarea rows=30 cols=75>
     //高精度加法
 #include<stdio.h>
 #include<string.h>
 int main()
 {
-	char a[241] = "";
-	char b[241] = "";
-	int c[241] = { 0 };//输出
-	scanf("%s", &a);
-	scanf("%s", &b);
-	int bn = strlen(b);
-	int an = strlen(a);
-	if (an >= bn)//判断谁位数多，就把相差的位数赋值给数组c
-	{
-		int flag = 0;//判断上一位相加有无进1
-		for (int i = 0; bn - 1 - i >= 0; i++)//从两数末位取到较小数的首位
-		{
-			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)//无需进1
-			{
-				c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
-				flag = 0;
-			}
-			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)//需要进1
-			{
-				c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
-				flag = 1;
-			}
-		}
-		for (int k = an - bn - 1; k >= 0; k--)//较大数的剩余的位数，同样需要判断是否需要进1
-		{
-			if (a[k] - '0' + flag < 10)
-			{
-				c[k] = a[k] - '0' + flag;
-				flag = 0;
-			}
-			if (a[k] - '0' + flag >= 10)
-			{
-				c[k] = a[k] - '0' + flag - 10;
-				flag = 1;
-			}
-		}
-		if (flag == 0)for (int k = 0; k < an; k++)printf("%d", c[k]);
-		if (flag == 1)
-		{
-			printf("1");//由于以较大数的位数作为数组c的项数，如果flag==1则代表最高位加和大于10，
-			//需要增添一位,又由于9+9<20，首位只可能为1。
-			for (int k = 0; k < an; k++)printf("%d", c[k]);//输出数组c，也就是两数和。
-		}
-	}
-	//下面与上面类似，仅仅两个数大小相反，部分区域把ab互换就可以了
-	if (an < bn)
-	{
-		int flag = 0;
-		for (int i = 0; an - 1 - i >= 0; i++)
-		{
-			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)
-			{
-				c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
-				flag = 0;
-			}
-			if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)
-			{
-				c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
-				flag = 1;
-			}
-		}
-		for (int k = bn - an - 1; k >= 0; k--)
-		{
-			if (b[k] - '0' + flag < 10)
-			{
-				c[k] = b[k] - '0' + flag;
-				flag = 0;
-			}
-			if (b[k] - '0' + flag >= 10)
-			{
-				c[k] = b[k] - '0' + flag - 10;
-				flag = 1;
-			}
-		}
-		if (flag == 0)for (int k = 0; k < bn; k++)printf("%d", c[k]);
-		if (flag == 1)
-		{
-			printf("1");
-			for (int k = 0; k < bn; k++)printf("%d", c[k]);
-		}
-	}
-	return 0;
+char a[241] = "";
+char b[241] = "";
+int c[241] = { 0 };
+//输出
+scanf("%s", &a);
+scanf("%s", &b);
+int bn = strlen(b);
+int an = strlen(a);
+if (an >= bn)
+//判断谁位数多，就把相差的位数赋值给数组c
+{
+int flag = 0;//判断上一位相加有无进1
+for (int i = 0; bn - 1 - i >= 0; i++)
+//从两数末位取到较小数的首位
+{
+if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)
+//无需进1
+{
+c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
+flag = 0;
 }
-
+if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)
+//需要进1
+{
+c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
+flag = 1;
+}
+}
+for (int k = an - bn - 1; k >= 0; k--)
+//较大数的剩余的位数，同样需要判断是否需要进1
+{
+if (a[k] - '0' + flag < 10)
+{
+c[k] = a[k] - '0' + flag;
+flag = 0;
+}
+if (a[k] - '0' + flag >= 10)
+{
+c[k] = a[k] - '0' + flag - 10;
+flag = 1;
+}
+}
+if (flag == 0)for (int k = 0; k < an; k++)printf("%d", c[k]);
+if (flag == 1)
+{
+printf("1");
+//由于以较大数的位数作为数组c的项数，如果flag==1则代表最高位加和大于10，
+//需要增添一位,又由于9+9<20，首位只可能为1。
+for (int k = 0; k < an; k++)printf("%d", c[k]);
+//输出数组c，也就是两数和。
+}
+}
+//下面与上面类似，仅仅两个数大小相反，部分区域把ab互换就可以了
+if (an < bn)
+{
+int flag = 0;
+for (int i = 0; an - 1 - i >= 0; i++)
+{
+if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)
+{
+c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
+flag = 0;
+}
+if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)
+{
+c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
+flag = 1;
+}
+}
+for (int k = bn - an - 1; k >= 0; k--)
+{
+if (b[k] - '0' + flag < 10)
+{
+c[k] = b[k] - '0' + flag;
+flag = 0;
+}
+if (b[k] - '0' + flag >= 10)
+{
+c[k] = b[k] - '0' + flag - 10;
+flag = 1;
+}
+}
+if (flag == 0)for (int k = 0; k < bn; k++)printf("%d", c[k]);
+if (flag == 1)
+{
+printf("1");
+for (int k = 0; k < bn; k++)printf("%d", c[k]);
+}
+}
+return 0;
+}
     </textarea>
     <h1 align="center">----------------------------------------------------------</h1>
 
