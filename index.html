@@ -7,8 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySpace</title>
-    <style type="text/css">
-    a:hover{color:lightskyblue}
+    <style type="text/css";>
+    a:hover{color:lightskyblue;}
+    *{font-family: 'Microsoft YaHei';}
+    table,
+    td {
+        border：1px solid;
+        border-color:steelblue;
+        border-collapse: collapse;
+    }
     </style>
 </head>
 
@@ -90,7 +97,7 @@
     </a>
     <a id="c1" href="#title"><h2 style="color: goldenrod;text-align:center;">C语言学习日记（1）：高精度加法</h2></a><br />
     <p style="background-color: snow;">由于接触c语言不久（就十几天），所以代码写的可能会比较麻烦，希望各位大佬多多指正。<br /><br/>
-    题目是：计算a+b的值，a,b皆为不超过240位的正整数。<br /><br />
+    <p style="font-weight: bold;">题目是：计算a+b的值，a,b皆为不超过240位的正整数。</p><br /><br />
     我当时看到这道题后大致的思路是：<br /><br />
     （1）：位数很多，所以需要用数组或者字符串。<br /><br />
     （2）：加法的话，就是超过十给前一位加一嘛。<br /><br />
@@ -202,7 +209,7 @@ return 0;
 <br/><br/><br/><br/><br/>
 <a id="c2" href="#title"><h2 style="color: goldenrod;text-align:center;">C语言学习日记（2）：麦块问题</h2></a><br />
 <p style="background-color: snow;">今天做到一道蛮有意思的题目。<br/><br/>
-题目是这样的：给你一个边长为 n-1 的立方体。求立方点上三个点的等边三角形的数目。每边必须平行于Oxy、Oxz、Oyz的某个表面。现在你需要数一数这样的三角形有多少个。每个点只能在立方体的边界或内点上，每个点的三个坐标x、y、z必须是整数。<br/><br/>
+<p style="font-weight: bold;">题目是这样的：给你一个边长为 n-1 的立方体。求立方点上三个点的等边三角形的数目。每边必须平行于Oxy、Oxz、Oyz的某个表面。现在你需要数一数这样的三角形有多少个。每个点只能在立方体的边界或内点上，每个点的三个坐标x、y、z必须是整数。</p><br/><br/>
 输入：第一行一个整数T。(0≤T≤1e5)<br/><br/>
 每个测试用例包含一个整数 n(0≤n≤10^18)。<br/><br/>
 如果 n=0，则输出 0<br/><br/>
@@ -257,4 +264,5 @@ return 0;
 </body>
 
 </html>
+
 
