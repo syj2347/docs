@@ -17,7 +17,6 @@
             background-color: #fcfcfc;
             line-height: 41px;
             position: fixed;
-            top:0;
         }
         .nav a {
             font-size: 12px;
@@ -135,7 +134,7 @@
     （1）：开始时，以为较大的数相比较小数多出的位数，可以直接赋值给输出的数组，但实际上也是有可能从后不断加和进一的，所以也需要判断是否需要进1.<br /><br />
     （2）我由于把较大数的位数当作输出数组（结果）的元素数目，所以当加和后，首位加和超过10，那么输出的位数也要加1。由于9+9<20，所以我直接在输出数组前printf了一个1来解决这个问题。（当然要先判断首位有没有超过10）<br/><br />
     </p>
-    <textarea rows=40 cols=70>
+    <textarea rows=50 cols=47>
 //高精度加法
 #include<stdio.h>
 #include<string.h>
@@ -247,7 +246,7 @@ return 0;
 随后利用乘积的模等于模的乘积的模，便可以进行简化运算了。<br/><br/>
 最后我写出的代码是这样的：<br/><br/> 
 </p>
-<textarea cols="50" rows="25">
+<textarea cols="40" rows="25">
 #include<stdio.h>
 int main()
 {
