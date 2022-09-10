@@ -1,2 +1,2 @@
 大一上练习html语法时留下的……
-[网站](http://syj2347.giyhub.io)
+[网站](http://syj2347.github.io)
