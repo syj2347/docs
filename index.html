@@ -2,291 +2,61 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySpace</title>
-    <style>
-    a:hover{color:lightskyblue;}
-    .nav {
-            
-            height: 41px;
-            border-top: 3px solid #ff8500;
-            border-bottom: 1px solid #edeef0;
-            background-color: #fcfcfc;
-            line-height: 41px;
-            position: fixed;
-        }
-        .nav a {
-            font-size: 12px;
-            color: #4c4c4c;
-            text-decoration: none;
-            display: inline-block;
-            height: 41px;
-            padding: 0 20px;
-        }
-        .nav a:hover {
-            background-color: #eee;
-            color: #ff8500;
-
-        }
-        
-    
-    
-    </style>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 
 <body>
-    <div class="nav">
-        <a href="#">首页</a>
-        <a href="#title">目录</a>
-        <a href="#https://www.baidu.com/">搜索</a>
-        <a href="#2">C</a>
-        <a href="#2">JAVA</a>
-    </div>
-    <br/><br/>
-    <a id="main"><h1 style="color:cornflowerblue;background-color:powderblue" align="center"><span style="font-size: 32px; margin: 21px 0;">&lt;氼鏿&nbsp;的空间&gt;</span></h1></a>
-    <h4 style="color:rebeccapurple" align="center">ps：记录一下学习过程中的体会与理解</h4>
-    <form style="text-align:center;">
-        <label for="text1">你是谁？：</label><input type="text" value="请输入昵称" id="text1"><br />
-        <label for="text2">密码？：</label><input type="password" id="text2"><br />
-        性别？：<label for="nan">男</label><input type="radio" name="sex" id="nan"><label for="nv">女</label><input type="radio" name="sex" id="nv"><br />
-        上传头像<input type="file"><input type="submit" value="注册"><input type="reset">
-    </form>
-    <br /><br /><br /><br />
-    <table align="center" border=1 >
-        <thead>
-            <tr>
-                <th rowspan=3><h1 style="color:teal">基<br/>本<br/>内<br/>容</h1></th>
-                <th>
-                    <a href="https://www.baidu.com/" target="_blank">
-                        <h2>&lt;简&nbsp;介&gt;</h2>
-                    </a>
-                </th>
-                <th>
-                        <a href="https://www.bilibili.com/">bilibili</a>
-                        <a href="https://pintia.cn/">PTA</a>
-                        <a href="https://www.csdn.net/">CSDN</a><br/>
-                        <a href="https://codeforces.com/">codeforces</a>
-                        <a href="https://github.com/">github</a>
-                </th>
-                <th>
-                    <a href="#title">
-                        <h2>&lt;目&nbsp;录&gt;</h2>
-                    </a>
-                </th>
-            </tr>
-            <tr>
-                <th><a href="#2" >
-                        <h2>&lt;C++&gt;</h2>
-                    </a>
-                </th>
-                <th><a href="#2" >
-                        <h2>&lt;C&gt;</h2>
-                    </a></th>
-                <th><a href="#2" >
-                        <h2>&lt;JAVA&gt;</h2>
-                    </a></th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="#2">
-                        <h2>&lt;视&nbsp;频&gt;</h2>
-                    </a>
-                </th>
-                <th><a href="#2">
-                        <h2>&lt;Web&gt;</h2>
-                    </a></th>
-                <th><a href="#2">
-                        <h2>&lt;安卓&gt;</h2>
-                    </a>
-            </tr>
-        </thead>
-    </table>   
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <a id="title" href="#"><h1 style="text-align:center; color:orange;background-color: papayawhip;">&lt;目录&gt;</h1></a>
-    <dl style="background-color:snow">
-        <dt><h2 style="color:steelblue">&lt;C&gt;</h2></dt>
-        <dd><a href="#c1">C语言学习日记（1）：高精度算法</a></dd>
-        <dd><a href="#c2">C语言学习日记（2）：麦块问题</a></dd>
-        <dd><a>C语言学习日记（3）：排序问题</a></dd>
-        <dd><a>C语言学习日记（4）：快速幂</a></dd>
-    </dl>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <a id="2">
-        <h1  style="color: peru;background-color: papayawhip;" align="center"><span style="font-size: 32px; margin: 21px 0;">&lt;C&gt;</span></h1>
-    </a>
-    <a href="#main">
-        <h3 style="text-align:center;">&lt;返回主页&gt;</h3>
-    </a>
-    <a id="c1" href="#title"><h2 style="color: goldenrod;text-align:center;">C语言学习日记（1）：高精度加法</h2></a><br />
-    <p style="background-color: snow;">由于接触c语言不久（就十几天），所以代码写的可能会比较麻烦，希望各位大佬多多指正。<br /><br/>
-    <p style="font-weight: bold;">题目是：计算a+b的值，a,b皆为不超过240位的正整数。</p><br /><br />
-    我当时看到这道题后大致的思路是：<br /><br />
-    （1）：位数很多，所以需要用数组或者字符串。<br /><br />
-    （2）：加法的话，就是超过十给前一位加一嘛。<br /><br />
-    （3）：字符串加和就靠-'0'<br /><br />
-    随后想到两个数位数不同时，相同下标的数组元素是不匹配的，想过补零，但感觉比较麻烦，便通过strlen函数表示出相应的需要相加的元素下标。<br />
-    于是，也就大致写出来的，但也有一部分测试是不正确的，因为一些方面没有考虑清楚，如下所示：<br />
-    <br/>小问题：<br/><br />
-    （1）：开始时，以为较大的数相比较小数多出的位数，可以直接赋值给输出的数组，但实际上也是有可能从后不断加和进一的，所以也需要判断是否需要进1.<br /><br />
-    （2）我由于把较大数的位数当作输出数组（结果）的元素数目，所以当加和后，首位加和超过10，那么输出的位数也要加1。由于9+9<20，所以我直接在输出数组前printf了一个1来解决这个问题。（当然要先判断首位有没有超过10）<br/><br />
-    </p>
-    <textarea rows=50 cols=43>
-//高精度加法
-#include<stdio.h>
-#include<string.h>
-int main()
-{
-char a[241] = "";
-char b[241] = "";
-int c[241] = { 0 };
-//输出
-scanf("%s", &a);
-scanf("%s", &b);
-int bn = strlen(b);
-int an = strlen(a);
-if (an >= bn)
-//判断谁位数多，就把相差的位数赋值给数组c
-{
-int flag = 0;//判断上一位相加有无进1
-for (int i = 0; bn - 1 - i >= 0; i++)
-//从两数末位取到较小数的首位
-{
-if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)
-//无需进1
-{
-c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
-flag = 0;
-}
-if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)
-//需要进1
-{
-c[an - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
-flag = 1;
-}
-}
-for (int k = an - bn - 1; k >= 0; k--)
-//较大数的剩余的位数，同样需要判断是否需要进1
-{
-if (a[k] - '0' + flag < 10)
-{
-c[k] = a[k] - '0' + flag;
-flag = 0;
-}
-if (a[k] - '0' + flag >= 10)
-{
-c[k] = a[k] - '0' + flag - 10;
-flag = 1;
-}
-}
-if (flag == 0)for (int k = 0; k < an; k++)printf("%d", c[k]);
-if (flag == 1)
-{
-printf("1");
-//由于以较大数的位数作为数组c的项数，如果flag==1则代表最高位加和大于10，
-//需要增添一位,又由于9+9<20，首位只可能为1。
-for (int k = 0; k < an; k++)printf("%d", c[k]);
-//输出数组c，也就是两数和。
-}
-}
-//下面与上面类似，仅仅两个数大小相反，部分区域把ab互换就可以了
-if (an < bn)
-{
-int flag = 0;
-for (int i = 0; an - 1 - i >= 0; i++)
-{
-if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag < 10)
-{
-c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag;
-flag = 0;
-}
-if (a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' + flag >= 10)
-{
-c[bn - 1 - i] = a[an - 1 - i] + b[bn - 1 - i] - '0' - '0' - 10 + flag;
-flag = 1;
-}
-}
-for (int k = bn - an - 1; k >= 0; k--)
-{
-if (b[k] - '0' + flag < 10)
-{
-c[k] = b[k] - '0' + flag;
-flag = 0;
-}
-if (b[k] - '0' + flag >= 10)
-{
-c[k] = b[k] - '0' + flag - 10;
-flag = 1;
-}
-}
-if (flag == 0)for (int k = 0; k < bn; k++)printf("%d", c[k]);
-if (flag == 1)
-{
-printf("1");
-for (int k = 0; k < bn; k++)printf("%d", c[k]);
-}
-}
-return 0;
-}
-    </textarea>
-<br/><br/><br/><br/><br/>
-<a id="c2" href="#title"><h2 style="color: goldenrod;text-align:center;">C语言学习日记（2）：麦块问题</h2></a><br />
-<p style="background-color: snow;">今天做到一道蛮有意思的题目。<br/><br/>
-<p style="font-weight: bold;">题目是这样的：给你一个边长为 n-1 的立方体。求立方点上三个点的等边三角形的数目。每边必须平行于Oxy、Oxz、Oyz的某个表面。现在你需要数一数这样的三角形有多少个。每个点只能在立方体的边界或内点上，每个点的三个坐标x、y、z必须是整数。</p><br/><br/>
-输入：第一行一个整数T。(0≤T≤1e5)<br/><br/>
-每个测试用例包含一个整数 n(0≤n≤10^18)。<br/><br/>
-如果 n=0，则输出 0<br/><br/>
-输出：对于每个测试用例，输出这样的三角形有多少个，答案需要对1000000007取模<br/><br/>
-初看有两个难点，第一个是需要找到三角形个数关于n的规律，第二个就是由于数值都很庞大，需要简便运算。<br/><br/>
-第一个问题，在尝试地画了几张图后，可以比较轻易地发现每个正方体的表面上的点都能形成八个正三角形，那么问题也就简化成了求边长为n-1的立方体内有多少个正方体，最后也就是求1到n-1的立方和乘以8再取模。<br/><br/>
-第二个问题，首先如果使用循环来求立方和，显然是不行的，因为数值太大了，所以可以利用数学上的方法，立方和公式<br/><br/>
-随后利用乘积的模等于模的乘积的模，便可以进行简化运算了。<br/><br/>
-最后我写出的代码是这样的：<br/><br/> 
-</p>
-<textarea cols="40" rows="25">
-#include<stdio.h>
-int main()
-{
-int t;
-long long n;
-long long sum = 0;
-scanf("%d", &t);
-for (int i = 1; i <= t; i++)
-{
-scanf("%lld", &n);
-if (n == 0||n == 1)
-{
-printf("0\n");
-continue;
-}
-sum = (((n - 1) % 1000000007) * ((n - 1) % 1000000007) % 1000000007)\
-* (((n) % 1000000007) * ((n) % 1000000007) % 1000000007) % 1000000007 * 2 % 1000000007;
-printf("%d\n", sum);
-}
-return 0;
-}
-</textarea>    
-    
-    <h4>您还想看什么板块？</h4>
-        <ul>
-            <li>书籍推荐</li>
-            <li>软件安装与调试</li>
-            <li>pdf等学习资源</li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <dl>
-            <dt><h4>关注我</h4></dt>
-            <dd><a href="https://space.bilibili.com/418288338/?spm_id_from=333.999.0.0" targrt="_blank">关注我的bilibili</a></dd>
-            <dd>CSDN</dd>
-            <dd>微信公众号</dd>
-            <dd>头条号</dd>
-            <dd>联系我们</dd>
-        </dl>
+  <div id="app"></div>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script>
+    window.$docsify = {
+      // 开启封面 
+      coverpage: true,
+      name: '',
+      repo: 'https://github.com/syj2347',
+      loadSidebar: true,
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      }
+    }
+  </script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+  <!-- 全文搜索 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script> -->
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <style type="text/css">
+    .content {
+      overflow: auto;
+    }
+  </style>
+  <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
+
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
 </body>
 
 </html>
