@@ -3,3 +3,4 @@
 * [Markdown](zh-cn/Markdown)
 * [Codeforces](zh-cn/Codeforces)
 * [计算机网络](zh-cn/计算机网络/计算机网络)
+* [Gaussian_Splatting](zh-cn/3DGaussianSplatting/3D_Gaussian_Splatting.md)
