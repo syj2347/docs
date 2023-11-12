@@ -1,4 +1,4 @@
-![logo](_media/test.gif size:70%)
+![logo](_media/test.gif)
 
 # syj2347
 
