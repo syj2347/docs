@@ -1,3 +1,5 @@
 * [首页](zh-cn/)
 * [指南](zh-cn/guide)
 * [Markdown](zh-cn/Markdown)
+* [Codeforces](zh-cn/Codeforces)
+* [计算机网络](zh-cn/计算机网络/计算机网络)
