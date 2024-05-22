@@ -6,3 +6,4 @@
 * [Gaussian_Splatting](zh-cn/3DGaussianSplatting/3D_Gaussian_Splatting.md)
 * [添加系统调用](zh-cn/添加系统调用/添加系统调用.md)
 * [添加内核模块](zh-cn/添加内核模块/添加内核模块.md)
+* [创新实践3个人报告](zh-cn/创新实践3个人报告/创新实践3个人报告.md)
