@@ -12,3 +12,4 @@
 * [代码题相关](zh-cn/代码题相关/代码题相关.md)
 * [毕设试验记录](zh-cn/毕设实验记录/DyFADet%20论文及代码/实验记录及截图.md)
 * [网络编程从零开始](zh-cn/网络编程从零开始/C++/网络编程从零开始.md)
+* [Leetcode_1](zh-cn/Leetcode_1.md/Leetcode/Leetcode_1.md)
