@@ -2,13 +2,13 @@
 
 ### Easy
 
-- [X] ##### [找出所有子集的异或总和再求和](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/description/?envType=daily-question&amp;envId=2025-04-05)
+  ##### [找出所有子集的异或总和再求和](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/description/?envType=daily-question&amp;envId=2025-04-05)
 
   ​`4.5 多种解法 递归法 迭代法 数学`​
 
-- [X] ##### [有序三元组中的最大值 I](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-i/description/)
+  ##### [有序三元组中的最大值 I](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-i/description/)
 
-  - [X] [有序三元组中的最大值 II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/description/?envType=daily-question&amp;envId=2025-04-03)  `4.3 数据加强版`​
+  - [有序三元组中的最大值 II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/description/?envType=daily-question&amp;envId=2025-04-03)  `4.3 数据加强版`​
 
   ​`4.2 多种解法的思路比较值得记忆`​
 
@@ -41,7 +41,7 @@ public:
 
 ### Medium
 
-- [X] ##### [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/description/?envType=daily-question&amp;envId=2025-04-07)
+  ##### [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/description/?envType=daily-question&amp;envId=2025-04-07)
 
   ​`4.7 经典01背包 复习了下背包问题 写出来了`​
 
@@ -78,7 +78,7 @@ public:
   // @lc code=end
   ```
 
-- [X] ##### [最大整除子集](https://leetcode.cn/problems/largest-divisible-subset/description/?envType=daily-question&amp;envId=2025-04-06)
+  ##### [最大整除子集](https://leetcode.cn/problems/largest-divisible-subset/description/?envType=daily-question&amp;envId=2025-04-06)
 
   ​`4.6 自己用了两个方法都超时了，dfs是39/49，维护出所有集合的方法是47/49处超时`​
 
@@ -124,7 +124,7 @@ public:
   };
   ```
 
-- [X] ##### [解决智力问题](https://leetcode.cn/problems/solving-questions-with-brainpower/description/?envType=daily-question&amp;envId=2025-04-01)  
+  ##### [解决智力问题](https://leetcode.cn/problems/solving-questions-with-brainpower/description/?envType=daily-question&amp;envId=2025-04-01)  
 
   <span data-type="text" style="color: var(--b3-theme-on-background); font-family: var(--b3-font-family-protyle); font-size: var(--b3-font-size-editor); background-color: transparent;"> </span>`4.1`​
 
@@ -159,7 +159,7 @@ public:
 
 ### Hard
 
-- [X] ##### [统计好整数的数目](https://leetcode.cn/problems/find-the-count-of-good-integers/)
+  ##### [统计好整数的数目](https://leetcode.cn/problems/find-the-count-of-good-integers/)
 
   ​`4.12`​
 
@@ -206,7 +206,7 @@ public:
   // @lc code=end
   ```
 
-- [X] ##### [统计强大整数的数目](https://leetcode.cn/problems/count-the-number-of-powerful-integers/)
+  ##### [统计强大整数的数目](https://leetcode.cn/problems/count-the-number-of-powerful-integers/)
 
   ​`4.10`
 
@@ -253,7 +253,7 @@ public:
   // @lc code=end
   ```
 
-- [X] ##### [串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/description/?envType=study-plan-v2&amp;envId=top-interview-150) 
+  ##### [串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/description/?envType=study-plan-v2&amp;envId=top-interview-150) 
 
    `3.31`​
 
@@ -347,7 +347,7 @@ public:
   };
   ```
 
-- [X] ##### [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/description/?envType=study-plan-v2&amp;envId=top-interview-150) 
+  ##### [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/description/?envType=study-plan-v2&amp;envId=top-interview-150) 
 
    `3.31`​
 
