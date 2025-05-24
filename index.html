@@ -23,7 +23,7 @@
       // 侧边栏文档目录
       loadSidebar: true,
 
-      subMaxLevel: 2,
+      subMaxLevel: 6,
       alias: {
         "/.*/_sidebar.md": "/_sidebar.md",
       },
@@ -41,10 +41,12 @@
 
       // 全文搜索
       search: {
+        maxAge: 86400000,
         paths: 'auto',
         depth: 6,
         noData: "没有搜到",
         placeholder: "搜索...",
+        // hideOtherSidebarContent: true,
         // 避免搜索索引冲突,同一域下的多个网站之间
         // namespace: "website-1",
       },
