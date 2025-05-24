@@ -1,6 +1,6 @@
 # Leetcode_1
 
-### Easy
+## Easy
 
   ##### [找出所有子集的异或总和再求和](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/description/?envType=daily-question&amp;envId=2025-04-05)
 
@@ -39,7 +39,7 @@ public:
 };
 ```
 
-### Medium
+## Medium
 
   ##### [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/description/?envType=daily-question&amp;envId=2025-04-07)
 
@@ -157,7 +157,7 @@ public:
   // 记忆化dfs
   ```
 
-### Hard
+## Hard
 
   ##### [统计好整数的数目](https://leetcode.cn/problems/find-the-count-of-good-integers/)
 

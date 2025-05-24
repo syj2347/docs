@@ -1,3 +1,9 @@
+<style>
+img{
+    width: 60%;
+    padding-left: 20%;
+}
+</style>
 ## 论文
 
 - anisotropic
