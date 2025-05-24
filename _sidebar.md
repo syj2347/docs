@@ -1,7 +1,7 @@
 * [首页](zh-cn/)
 * [指南](zh-cn/guide)
 * [Markdown](zh-cn/Markdown)
-* [Codeforces](zh-cn/Codeforces)
+* [Codeforces](zh-cn/Codeforces/Codeforces.md)
 * [计算机网络](zh-cn/计算机网络/计算机网络)
 * [Gaussian_Splatting](zh-cn/3DGaussianSplatting/3D_Gaussian_Splatting.md)
 * [添加系统调用](zh-cn/添加系统调用/添加系统调用.md)
