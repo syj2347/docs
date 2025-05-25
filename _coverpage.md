@@ -8,4 +8,4 @@
 [GitHub](https://github.com/syj2347)
 [Get Started](/README.md)
 
-![color](#fff)
+<!-- ![color](#fff) -->
