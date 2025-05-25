@@ -34,37 +34,57 @@
   <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4931760_dv85k1w73ji.css">
 
   <style>
+    .markdown-section {
+      font-family: 'Times New Roman', Fira Code, sans-serif;
+      font-size: 15px;
+      /* 你可以根据需要调整字体大小 */
+      line-height: 1.6;
+      /* 行高，使文本更易读 */
+      color: #333;
+      /* 文本颜色 */
+    }
+
+    .markdown-section img {
+      /* 方法一：设置最大宽度和高度 */
+      max-width: 80%;
+      /* 图片最大宽度为父元素宽度的80%，你可以根据需要调整这个值 */
+      max-height: 600px;
+      /* 图片最大高度为600px，你可以根据需要调整这个值 */
+      /* 方法二：设置宽度百分比 */
+      width: 40%;
+      height: auto;
+      /* 保持图片的宽高比 */
+      display: block;
+      /* 去除图片底部的空白间隙 */
+      /* margin: 0 auto; */
+      /* 水平居中图片 */
+    }
+
     /* 加重描述 strong*/
     .markdown-section strong {
       color: rgb(239, 112, 96);
     }
 
-    /* .app-nav {
+    .app-nav {
       position: fixed;
       margin: 0;
       padding: 10px 0 10px 0;
-      width: calc(100% - 325px);
+      /* width: calc(100% - 325px); */
       background-color: #fff;
       height: 55px;
       border-bottom: 1px solid #eee;
-    } */
+    }
 
-    /*.github-corner{
-      position: absolute;
-      z-index: 999999;
-      top: 0;
-    }*/
-
-    /* .markdown-section code {
+    .markdown-section code {
       border-radius: 2px;
-      font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
-      font-size: 16px !important;
+      font-family: Fira Code, "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 11px !important;
       margin: 0 2px;
       padding: 3px 5px;
       white-space: nowrap;
       border: 1px solid #282c34;
       color: rgb(184, 101, 208);
-    } */
+    }
 
     .markdown-section>div>img,
     .markdown-section pre {
@@ -129,34 +149,11 @@
       box-shadow: 1px 1px 3px black;
     }
 
-    /*代码块背景*/
-    /* p code {
-      background-color: rgb(255, 255, 255) !important;
-    }
-
-    .markdown-section p.tip,
-    .markdown-section tr:nth-child(1n) {
-      font-size: 16px !important;
-    }
-
-    .markdown-section h1 {
-      margin: 3rem 0 2rem 0;
-    }
-
-    .markdown-section h2 {
-      margin: 2rem 0 1rem;
-    }
-
-    img,
-    pre {
-      border-radius: 5px;
-    } */
-
     /*添加代码块复制按钮样式*/
     .docsify-copy-code-button {
-      background: #00a1d6 !important;
+      background: #87acd3 !important;
       color: #FFFFFF !important;
-      font-size: 13px !important;
+      font-size: 9px !important;
     }
 
     ::after {
@@ -165,7 +162,7 @@
     }
 
     .markdown-section>p {
-      font-size: 16px !important;
+      font-size: 15px !important;
     }
 
 
@@ -184,7 +181,7 @@
     /*代码块头部图标 end*/
 
     .markdown-section pre>code {
-      color: #011414 !important;
+      color: #000000 !important;
       font-family: Fira code, consolas, "PingFang SC", "Microsoft YaHei", monospace !important;
       background-color: #f9f9f9 !important;
       /*#accfff  #282c34*/
@@ -197,31 +194,11 @@
       /*border-radius: .3em;*/
     }
 
-    ol,
+    /* ol,
     ul,
     li {
       line-height: 27px !important;
       font-size: 16px !important;
-    }
-
-    @media (min-width:600px) {
-      .markdown-section pre>code {
-        font-size: 12px !important;
-        letter-spacing: 1.1px !important;
-      }
-
-    }
-
-    /* @media (max-width:600px) {
-      .markdown-section pre>code {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 16px !important;
-      }
-
-      pre:after {
-        content: "" !important;
-      }
     } */
 
     section.cover h1 {
@@ -231,35 +208,6 @@
     pre {
       background-color: #ffffff !important;
     }
-
-    /* @media (min-width:600px) {
-      pre code {
-        box-shadow: 2px 1px 20px 2px #aaa;
-        border-radius: 10px !important;
-        padding-left: 20px !important;
-      }
-
-    } */
-
-    /* @media (max-width:600px) {
-      pre {
-        padding-left: 3px !important;
-        padding-right: 3px !important;
-        margin-left: -20px !important;
-        margin-right: -20px !important;
-        box-shadow: 0px 0px 20px 0px #f7f7f7 !important;
-      }
-
-      
-      .docsify-copy-code-button {
-        display: none;
-      }
-
-      .advertisement {
-        display: none;
-      }
-
-    } */
 
     .katex {
       font-size: 0.9em !important;
@@ -286,7 +234,7 @@
     }
 
     .token.comment {
-      color: #484f5a !important;
+      color: #b7b7b7 !important;
     }
 
     .token.tag {
@@ -312,42 +260,6 @@
     .token.string {
       color: #698d1a !important;
     }
-
-    /* .token.punctuation {
-      color: #c0c3c1 !important;
-    } */
-
-    /* .token.number {
-      color: #c0c3c1 !important;
-    } */
-
-    /* a.section-link {
-      font-size: .9rem !important;
-    }
-
-    .advertisement {
-      position: fixed;
-      right: 20px;
-      top: 100px;
-      width: 110px;
-      box-shadow: -1px 0 2px 0px #c5ebda;
-      padding: 10px;
-      z-index: 99;
-      background-color: #fff;
-      text-align: center;
-    }
-
-    .advertisement p,
-    h4 {
-      margin: 0;
-      padding: 0;
-    }
-
-    .advertisement .Tencent_code h4 {
-      font-size: 15px;
-      color: #25a46a;
-      margin-bottom: 10px;
-    } */
 
     /*滚动条样式 start*/
     /* 滚动条宽度 */
@@ -413,7 +325,7 @@
         copy: '<span id="sitetime"></span> <br/> <span>Copyright &copy; 2021 &nbsp 💖 &nbsp</span>',
         auth: ' <strong><a href="https://github.com/syj2347/docs.git" target="_blank">syj2347-docs</a></strong>',
         pre: '<hr/>',
-        style: 'font-size: 15px; text-align: center;',
+        style: 'font-size: 11px; text-align: center;',
       },
       plugins: [
         /*来必力评论*/

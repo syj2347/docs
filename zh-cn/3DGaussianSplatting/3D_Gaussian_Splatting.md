@@ -1,8 +1,4 @@
-<style>
-img{
-    width: 60%;
-}
-</style>
+
 ## 论文
 
 - anisotropic
