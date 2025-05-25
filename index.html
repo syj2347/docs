@@ -212,7 +212,7 @@
 
     }
 
-    @media (max-width:600px) {
+    /* @media (max-width:600px) {
       .markdown-section pre>code {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -222,7 +222,7 @@
       pre:after {
         content: "" !important;
       }
-    }
+    } */
 
     section.cover h1 {
       margin: 0;
@@ -236,7 +236,7 @@
       pre code {
         /*box-shadow: 2px 1px 20px 2px #aaa;*/
         /* border-radius: 10px !important; */
-        padding-left: 20px !important;
+        /* padding-left: 20px !important; */
       }
 
     }
@@ -261,6 +261,11 @@
 
     } */
 
+    .katex {
+      font-size: 0.9em !important;
+      /* 缩小为父元素字体大小的 90% */
+    }
+
     .markdown-section pre {
       padding-left: 0 !important;
       padding-right: 0px !important;
@@ -276,7 +281,8 @@
     }
 
     .token.keyword {
-      color: #7b3192 !important;
+      color: #874c99 !important;
+      font-weight: bold !important;
     }
 
     .token.comment {
@@ -300,7 +306,7 @@
     }
 
     .token.function {
-      color: #bd7d04 !important;
+      color: #a36c05 !important;
     }
 
     .token.string {
@@ -391,7 +397,7 @@
       count: {
         countable: true,
         position: "top",
-        margin: "10px",
+        margin: "5px",
         float: "right",
         fontsize: "0.9em",
         color: "#4faee2",
