@@ -1,5 +1,5 @@
 - [<span class="iconfont icon-icon_fabu"></span> 首页]()
-  - [首页](zh-cn/)
+  - [首页](README.md)
   - [指南](zh-cn/guide.md)
   - [Markdown](zh-cn/Markdown)
 - [<span class="iconfont icon-jichukecheng"></span> 课程]()
