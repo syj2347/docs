@@ -4,6 +4,8 @@
 
 # ⏳目录
 !> `ps: 简陋的首页`
+
+?> 🔊 note
 * [首页](README.md)
 * [指南](zh-cn/guide.md)
 * [Markdown](zh-cn/Markdown)
