@@ -70,9 +70,9 @@
             margin: 0;
             padding: 10px 0 10px 0;
             /* width: calc(100% - 325px); */
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: #fff;
             height: 55px;
-            /* border-bottom: 1px solid #eee; */
+            border-bottom: 1px solid #eee;
         }
 
         .markdown-section code {
@@ -195,6 +195,13 @@
             /*border-radius: .3em;*/
         }
 
+        /* ol,
+    ul,
+    li {
+      line-height: 27px !important;
+      font-size: 16px !important;
+    } */
+
         section.cover h1 {
             margin: 0;
         }
@@ -211,6 +218,10 @@
         .markdown-section pre {
             padding-left: 0 !important;
             padding-right: 0px !important;
+        }
+
+        .markdown-section {
+            margin: 0 3.2% !important;
         }
 
         /*修改代码块代码颜色显示*/
@@ -385,7 +396,7 @@
                         return (base ? base : this.origin.code.apply(this, arguments));
                     }
                 }
-            },
+            }
 
         }
     </script>

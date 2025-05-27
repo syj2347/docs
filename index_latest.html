@@ -32,6 +32,8 @@
     <!-- 自定义特色样式：by myself -->
     <link rel="stylesheet" href="https://notebook.js.org/plugin/css/me.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4931760_dv85k1w73ji.css">
+    <link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="assets/css/common.css">
 
     <style>
         .markdown-section {
@@ -285,6 +287,32 @@
             onlyCover: true,
             topMargin: 60,//调整top
             //executeScript: true,//执行页面上的脚本，仅解析第一个脚本标签
+            'flexible-alerts': {
+                style: 'nyaa',
+                note: {
+                    label: "说明"
+                },
+                tip: {
+                    label: "小贴士"
+                },
+                warning: {
+                    label: "警告"
+                },
+                attention: {
+                    label: "注意"
+                },
+                important: {
+                    label: '重要',
+                    icon: 'icon-important',
+                    className: 'important'
+                },
+                typeMappings: {
+                    info: 'note',
+                    danger: 'attention',
+                    caution: 'attention'
+                }
+            },
+            nativeEmoji: true,
             search: {
                 paths: 'auto',
                 placeholder: '🔍 搜索',

@@ -1,37 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
-    <!-- <title>blog🌹</title> -->
-    <!-- <link rel="icon" href="https://notebook.js.org/images/favicon.ico"> -->
-    <!--- 网站图标 -->
+    <title>syj2347</title>
     <link rel="shortcut icon" href="./_media/pencil.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Description">
+    <meta name="description" content="NyaaCat Wiki, built with Docsify.">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- Adsense 资源投放 -->
-    <script data-ad-client="ca-pub-1890271224952559" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-    <!-- 谷歌站点收录 -->
-    <meta name="google-site-verification" content="qTFCf1hJ275saQ7H1kin5t2DVpznBKAj0Gi50XMOVMo" />
-    <!-- 百度站点收录 -->
-    <meta name="baidu-site-verification" content="SZyWUIzWiU" />
-
-    <link rel="stylesheet" href="https://notebook.js.org/plugin/css/vue-1.css">
+    <!--link rel="stylesheet" href="//unpkg.zhimg.com/docsify/lib/themes/vue.css"-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/vue.min.css">
+    <link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <meta name="theme-color" content="#339900">
     <!-- 支持 LaTex 语言 -->
     <link rel="stylesheet" href="https://notebook.js.org/plugin/css/katex.min.css" />
     <link rel="stylesheet" href="https://wugenqiang.js.org/src/css/iconfont.css">
     <link rel="stylesheet" href="https://notebook.js.org/plugin/custom.css">
-    <!-- alert -->
-    <link rel="stylesheet" href="https://notebook.js.org/plugin/sweetalert.min.css" type='text/css' media='all' />
-    <!-- 友链 -->
-    <link rel="stylesheet" href="https://notebook.js.org/plugin/css/friends-link.css">
-    <!-- 自定义特色样式：by myself -->
-    <link rel="stylesheet" href="https://notebook.js.org/plugin/css/me.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4931760_dv85k1w73ji.css">
 
     <style>
         .markdown-section {
@@ -60,19 +46,8 @@
             /* 水平居中图片 */
         }
 
-        /* 加重描述 strong*/
         .markdown-section strong {
             color: rgb(239, 112, 96);
-        }
-
-        .app-nav {
-            position: fixed;
-            margin: 0;
-            padding: 10px 0 10px 0;
-            /* width: calc(100% - 325px); */
-            background-color: rgba(255, 255, 255, 0.8);
-            height: 55px;
-            /* border-bottom: 1px solid #eee; */
         }
 
         .markdown-section code {
@@ -80,7 +55,7 @@
             font-family: Fira Code, Consolas, "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
             font-size: 11px !important;
             margin: 0 2px;
-            padding: 3px 5px;
+            /* padding: 3px 5px; */
             white-space: pre-wrap;
             border: 1px solid #282c34;
             color: rgb(184, 101, 208);
@@ -166,7 +141,6 @@
             font-size: 15px !important;
         }
 
-
         /* 代码块头部图标 start */
         .markdown-section pre:before {
             content: '';
@@ -204,7 +178,7 @@
         }
 
         .katex {
-            font-size: 0.9em !important;
+            font-size: 1.0em !important;
             /* 缩小为父元素字体大小的 90% */
         }
 
@@ -213,62 +187,16 @@
             padding-right: 0px !important;
         }
 
-        /*修改代码块代码颜色显示*/
-        .token.directive.keyword {
-            color: #1a6e9c !important;
-        }
-
-        .token.keyword {
-            color: #874c99 !important;
-            font-weight: bold !important;
-        }
-
-        .token.comment {
-            color: #b7b7b7 !important;
-        }
-
-        .token.tag {
-            color: #71527a !important;
-        }
-
-        .token.attr-name {
-            color: #e4652b !important;
-        }
-
-        .token.attr-value {
-            color: #1e6f9a !important;
-        }
-
-        .token.macro.property {
-            color: #135d84 !important;
-        }
-
-        .token.function {
-            color: #a36c05 !important;
-        }
-
-        .token.string {
-            color: #698d1a !important;
-        }
-
-        /*滚动条样式 start*/
-        /* 滚动条宽度 */
-        ::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        /* 滚动条颜色 */
-        ::-webkit-scrollbar-thumb {
-            background: #33a9dc;
-            background-image: linear-gradient(#6ecd56, #33a9dc, #cb6196, #c16290);
-            border-radius: 2em;
-        }
+        /* .markdown-section {
+            margin: 0 3.2% !important;
+        } */
     </style>
-
 </head>
 
 <body>
     <div id="app">🏃‍🏃‍🏃‍💨 加载中...</div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/docsify.min.js"></script>
+    <script src="assets/js/docsify-edit-on-github.1.0.3.min.js"></script>
     <script>
         window.$docsify = {
             name: "📖 SYJ' Blog",
@@ -340,58 +268,44 @@
                     });
                 },
             ],
-
-            markdown: {
-                renderer: {
-                    code: function (code, lang, base = null) {
-
-                        if (lang === "dot") {
-                            return (
-                                '<div class="viz">' + Viz(code, "SVG") + '</div>'
-                            );
-                        }
-
-                        var pdf_renderer = function (code, lang, verify) {
-                            function unique_id_generator() {
-                                function rand_gen() {
-                                    return Math.floor((Math.random() + 1) * 65536).toString(16).substring(1);
-                                }
-                                return rand_gen() + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + rand_gen() + rand_gen();
-                            }
-                            if (lang && !lang.localeCompare('pdf', 'en', { sensitivity: 'base' })) {
-                                if (verify) {
-                                    return true;
-                                } else {
-                                    var divId = "markdown_code_pdf_container_" + unique_id_generator().toString();
-                                    var container_list = new Array();
-                                    if (localStorage.getItem('pdf_container_list')) {
-                                        container_list = JSON.parse(localStorage.getItem('pdf_container_list'));
-                                    }
-                                    container_list.push({ "pdf_location": code, "div_id": divId });
-                                    localStorage.setItem('pdf_container_list', JSON.stringify(container_list));
-                                    return (
-                                        '<div style="margin-top:' + PDF_MARGIN_TOP + '; margin-bottom:' + PDF_MARGIN_BOTTOM + ';" id="' + divId + '">'
-                                        + '<a href="' + code + '"> Link </a> to ' + code +
-                                        '</div>'
-                                    );
-                                }
-                            }
-                            return false;
-                        }
-                        if (pdf_renderer(code, lang, true)) {
-                            return pdf_renderer(code, lang, false);
-                        }
-                        //return this.origin.code.apply(this, arguments);
-                        return (base ? base : this.origin.code.apply(this, arguments));
-                    }
+            'flexible-alerts': {
+                style: 'nyaa',
+                note: {
+                    label: "说明"
+                },
+                tip: {
+                    label: "小贴士"
+                },
+                warning: {
+                    label: "警告"
+                },
+                attention: {
+                    label: "注意"
+                },
+                important: {
+                    label: '重要',
+                    icon: 'icon-important',
+                    className: 'important'
+                },
+                typeMappings: {
+                    info: 'note',
+                    danger: 'attention',
+                    caution: 'attention'
                 }
             },
-
+            nativeEmoji: true,
+            plugins: [
+                EditOnGithubPlugin.create(
+                    'https://github.com/syj2347/docs/tree/main'
+                ),
+            ]
         }
     </script>
-    <script src="https://notebook.js.org/plugin/js/docsify.min.js"></script>
-    <script src="https://notebook.js.org/plugin/search.min.js"></script>
-    <script src="https://notebook.js.org/plugin/zoom-image.min.js"></script>
+
+    <!-- <script src="//unpkg.zhimg.com/docsify/lib/plugins/emoji.min.js"></script> -->
+    <script src="assets/js/docsify-plugin-flexible-alerts.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/plugins/search.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/plugins/zoom-image.min.js"></script>
 
     <!-- 支持 DOT 语言 -->
     <script src="https://notebook.js.org/plugin/viz.js"></script>
@@ -509,7 +423,6 @@
     </script>
     <!-- 字数统计 -->
     <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
-
 </body>
 
 </html>
