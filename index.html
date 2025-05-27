@@ -333,8 +333,10 @@
                 function (hook, vm) {
                     // load livere
                     hook.beforeEach(function (content) {
-                        var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC80MzA4MC8xOTYyNg=='></div>\n\n----\n"
-                        return content + comment;
+                        // 定义华丽的文章结束标志
+                        var endMark = '<div class = "over" >end</div>';
+                        var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC80MzA4MC8xOTYyNg=='></div>\n\n----\n";
+                        return content + endMark + comment;
                     });
 
                     hook.doneEach(function () {
